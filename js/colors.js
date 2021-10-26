@@ -1,6 +1,6 @@
 var colorSchemeArray = [];
 colorSchemeArray = [{
-    schemeName: "standart",
+    schemeName: "pistachios",
     colorHeader: "rgb(135 170 170 / 59%)",
     colorSidebarLeft: "rgb(246 215 167 / 68%)",
     colorTopic: "rgb(246 234 190 / 54%)"

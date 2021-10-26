@@ -53,6 +53,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 70px 0 0 0;
+  }
+}
+
 .header_text {
   margin: 0 0 0 420px;
   padding: 120px 0 0 0;
@@ -80,8 +86,15 @@ h1 {
 }
 
 @media only screen and (max-width: 900px) {
-  .header_text {
+  h1 {
     font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
   }
 }
 
@@ -89,6 +102,12 @@ h2 {
   color: #000000;
   font-size: 20px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 16px;
+  }
 }
 
 .sidebar {
@@ -102,9 +121,21 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .lebenslauf_wrapper {
+    padding: 0 15px 15px 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .lebenslauf_wrapper {
+    padding: 0 10px 10px 10px;
+  }
+}
+
 .sidebar_left {
   width: 280px;
-  height: 1500px;
+  height: 2050px;
   background-color: rgb(246 215 167 / 68%);
   -webkit-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
@@ -150,6 +181,19 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .sidebar_foto {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .sidebar_foto {
+    width: 100%;
+  }
+}
+
 .sidebar_content {
   padding: 55px 30px 30px 30px;
 }
@@ -163,6 +207,12 @@ h2 {
 @media only screen and (max-width: 900px) {
   .sidebar_content {
     padding: 50px 20px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar_content {
+    padding: 80px 20px 20px 20px;
   }
 }
 
@@ -184,9 +234,20 @@ h3 {
   margin: 0 0 10px 0;
 }
 
+.sidebar_content_item table {
+  margin: 0 auto;
+}
+
 .sidebar_content_item table td {
   height: 28px;
+  font-size: 16px;
   line-height: 28px;
+}
+
+@media only screen and (max-width: 360px) {
+  .sidebar_content_item table td {
+    font-size: 14px;
+  }
 }
 
 .profile table td {
@@ -247,6 +308,13 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .sidebar_right {
+    width: 100%;
+    padding: 60px 0 50px 0;
+  }
+}
+
 .sidebar_right_content_item {
   margin: 0 0 30px 0;
 }
@@ -265,11 +333,36 @@ h3 {
 }
 
 .sidebar_right_content_item table tr td {
+  font-size: 16px;
   padding: 5px;
+}
+
+.sidebar_right_content_item .employer {
+  font-weight: 700;
+}
+
+.sidebar_right_content_item .project {
+  text-decoration: underline;
+}
+
+.sidebar_right_content_item .addition {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 360px) {
+  .sidebar_right_content_item table tr td {
+    font-size: 14px;
+  }
 }
 
 .sidebar_right_content_item table tr td:nth-of-type(1) {
   width: 140px;
+}
+
+@media only screen and (max-width: 360px) {
+  .sidebar_right_content_item table tr td:nth-of-type(1) {
+    width: 120px;
+  }
 }
 
 .edv {
@@ -279,6 +372,13 @@ h3 {
 .lang table tr td:nth-of-type(1),
 .edv table tr td:nth-of-type(1) {
   width: 220px;
+}
+
+@media only screen and (max-width: 360px) {
+  .lang table tr td:nth-of-type(1),
+  .edv table tr td:nth-of-type(1) {
+    width: 170px;
+  }
 }
 
 .color_schema_buttons_wrapper {
@@ -298,6 +398,12 @@ h3 {
   .color_schema_buttons_wrapper {
     right: 0;
     top: 600px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .color_schema_buttons_wrapper {
+    display: none;
   }
 }
 
