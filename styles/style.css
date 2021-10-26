@@ -8,7 +8,20 @@ html {
 .inner_wrapper {
   width: 980px;
   margin: 70px auto;
-  padding: 30px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .inner_wrapper {
+    width: 900px;
+    margin: 30px auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .inner_wrapper {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .content_wrapper {
@@ -27,15 +40,49 @@ html {
   box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
 }
 
+@media only screen and (max-width: 1080px) {
+  .header {
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    height: 580px;
+    padding: 60px 0 0 0;
+  }
+}
+
 .header_text {
   margin: 0 0 0 420px;
   padding: 120px 0 0 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .header_text {
+    margin: 0 0 0 380px;
+    padding: 100px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header_text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 h1 {
   color: #000000;
   font-size: 60px;
   margin: 0 0 5px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .header_text {
+    font-size: 50px;
+  }
 }
 
 h2 {
@@ -49,6 +96,12 @@ h2 {
   vertical-align: top;
 }
 
+@media only screen and (max-width: 900px) {
+  .lebenslauf_wrapper {
+    padding: 0 30px 30px 30px;
+  }
+}
+
 .sidebar_left {
   width: 280px;
   height: 1500px;
@@ -59,6 +112,21 @@ h2 {
   margin: -280px 0 0 50px;
 }
 
+@media only screen and (max-width: 1080px) {
+  .sidebar_left {
+    width: 250px;
+    margin: -250px 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar_left {
+    width: 100%;
+    height: auto;
+    margin: -380px 0 0 0;
+  }
+}
+
 .sidebar_foto {
   width: 280px;
   height: 280px;
@@ -67,8 +135,35 @@ h2 {
   background-size: cover;
 }
 
+@media only screen and (max-width: 1080px) {
+  .sidebar_foto {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar_foto {
+    width: 350px;
+    height: 350px;
+    margin: 30px auto 0;
+  }
+}
+
 .sidebar_content {
   padding: 55px 30px 30px 30px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .sidebar_content {
+    padding: 45px 20px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar_content {
+    padding: 50px 20px 20px 20px;
+  }
 }
 
 .sidebar_content_item {
@@ -78,6 +173,7 @@ h2 {
 
 .sidebar_content_item:last-of-type {
   border-bottom: 1px solid transparent;
+  margin: 0;
 }
 
 h3 {
@@ -137,6 +233,20 @@ h3 {
   padding: 55px 35px 35px 35px;
 }
 
+@media only screen and (max-width: 1080px) {
+  .sidebar_right {
+    width: calc(100% - 250px - 35px);
+    padding: 40px 75px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar_right {
+    width: 100%;
+    padding: 40px 20px 50px 20px;
+  }
+}
+
 .sidebar_right_content_item {
   margin: 0 0 30px 0;
 }
@@ -177,6 +287,20 @@ h3 {
   top: 370px;
 }
 
+@media only screen and (max-width: 1080px) {
+  .color_schema_buttons_wrapper {
+    right: 0;
+    top: 282px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .color_schema_buttons_wrapper {
+    right: 0;
+    top: 600px;
+  }
+}
+
 .color_schema_button {
   width: 50px;
   height: 50px;
@@ -184,6 +308,13 @@ h3 {
   background-size: contain;
   border: 2px solid #fffbf8;
   margin: 0 0 3px 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .color_schema_button {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .pistachios {

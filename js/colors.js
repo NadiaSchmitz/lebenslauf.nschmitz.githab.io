@@ -63,14 +63,10 @@ colorSchemeArray = [{
   }
 ]
 
-// console.log(colorSchemeArray.length)
-
 $(document).ready(function() {
   $(".color_schema_button").click(function() {
     var buttonId = $(this).attr('id');
-    console.log(buttonId);
     for (var i = 0; i < colorSchemeArray.length; i++) {
-      console.log(colorSchemeArray[i].schemeName)
       if (buttonId == colorSchemeArray[i].schemeName) {
         var styleId = i;
         $('.header').css('backgroundColor', colorSchemeArray[styleId].colorHeader);
