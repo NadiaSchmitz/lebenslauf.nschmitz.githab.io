@@ -339,6 +339,7 @@ h3 {
 
 .sidebar_right_content_item .employer {
   font-weight: 700;
+  display: block;
 }
 
 .sidebar_right_content_item .project {
